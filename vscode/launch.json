@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "python": "/home/xieyang/anaconda3/envs/timeforcasting/bin/python3.8",
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/xieyang/文档/MSG/train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--save","./model-exchange-3.pt","--data","./data/exchange-rate.txt","--num_nodes","8","--batch_size","4","--epochs","30","--horizon","3"],
+            "env": {"CUDA_VISIBLE_DEVICE":"0"}
+            
+        }
+    ]
+}
